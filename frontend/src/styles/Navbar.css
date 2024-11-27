@@ -1,0 +1,49 @@
+/* General styles for the navbar */
+.navbar {
+    background-color: #3066BE;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #FBFFF1;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease, border 0.3s ease;
+    padding: 8px 12px;
+    /* Default transparent border */
+    border: 1px solid transparent;
+    border-radius: 10px;
+    /* Rounded corners for the box */
+}
+
+.navbar a:hover {
+    color: #B4C5E4;
+    border: 1px solid #B4C5E4 !important;
+}
+
+.active {
+    border: 1px solid #B4C5E4 !important;
+    /* Light background for the active link */
+    color: #FBFFF1 !important;
+    /* Match the hover color */
+}
+
+.navbar h1 {
+    margin: 0;
+    color: #FBFFF1;
+}

@@ -1,16 +1,20 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import '../styles/Navbar.css';
 
-const Navbar = () => {
-    return ( 
+function Navbar() {
+    return (
         <nav className='navbar'>
-            <h1>Johan Giæver</h1>
-            <div className='nav-links'>
-                <Link to='/'>Hjem</Link>
-                <Link to='/om'>Om meg</Link>
-                <Link to='/erfaring'>Erfaring</Link>
-            </div>
+            <ul>
+                <h1>Johan Giæver</h1>
+                <li>
+                    <NavLink to='/' activeClassName="active-link">Home</NavLink>
+                </li>
+                <li>
+                    <NavLink to='/about' activeClassName="active-link">About Me</NavLink>
+                </li>
+            </ul>
         </nav>
-     );
+    );
 }
- 
+
 export default Navbar;
